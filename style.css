@@ -1,0 +1,127 @@
+.body {
+  background-image: url("snoopy.png");
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  justify-content: center;
+}
+
+.message {
+  background-color: #97c772;
+  margin-top: 10%;
+  padding: 20px 40px;
+  padding-bottom: 50px;
+  width: 65%;
+  height: 30%;
+  color: #29586b;
+  align-self: center;
+  justify-self: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-family: 'sour gummy', sans serif;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  background-color: #948392;
+  color: white;
+  padding: 15px 20px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 8px;
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  width: fit-content;
+}
+
+.header {
+  display: flex;
+  background-color: #948392;
+  padding: 15px 20px;
+  margin: 0 auto;
+  color: #CACC90;
+  font-style: italic;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #A7CECB;
+  width:100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.card {
+  border: 1px solid white;
+  margin: 10px;
+  width: 300px;
+  height: 350px;
+  cursor: pointer;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;1
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-header, .card-body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-header {
+  background-color: #b97527;
+  padding: 10px;
+}
+
+.card-body {
+  background-color: #c58843;
+  color: #2E2C2F;
+  transform: rotateY(180deg);
+  padding: 15px;
+}
+
+.card-header img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.img {
+  width: 120px;
+  height: 80px;
+}
+
+.footer {
+  display: flex;
+  background-image: url(bglotus.png);
+  background-size: cover;
+  padding: 18px;
+  color: #CACC90;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  align-items: center;
+  
+}
