@@ -40,13 +40,20 @@
   width: fit-content;
 }
 
+/*CARDS*/
+
 .header {
-  display: flex;
-  background-color: #948392;
-  padding: 15px 20px;
-  margin: 0 auto;
+  display: block;
+  background-color: #32116e;
+  width: 100%;
+  height: 30%;
+  padding: 40px 25px;
+  margin-top: 0;
+  margin-bottom: 0;
   color: #CACC90;
+  font-family: 'sour gummy';
   font-style: italic;
+  text-align: center;
 }
 
 .carousel {
@@ -55,23 +62,27 @@
   justify-content: center;
   background-color: #A7CECB;
   width:100%;
-  height: 100%;
-  padding: 10px;
+  height: 85%;
+  padding: 60px 20px;
+  gap: 20px;
+  margin-top: 0;
 }
 
 .card {
   border: 1px solid white;
-  margin: 10px;
+  border-radius: 10px;
+  gap: 20px;
   width: 300px;
-  height: 350px;
+  height: 300px;
   cursor: pointer;
 }
 
 .card-inner {
   position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;1
+  width: 90%;
+  height: 95%;
+  border-radius: 10px;
+  text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
 }
@@ -95,13 +106,21 @@
 .card-header {
   background-color: #b97527;
   padding: 10px;
+  border-radius: 10px;
 }
 
 .card-body {
   background-color: #c58843;
+  border-radius: 10px;
   color: #2E2C2F;
   transform: rotateY(180deg);
   padding: 15px;
+  font-family: 'sour gummy';
+
+  .img{
+    height: 40%;
+
+  }
 }
 
 .card-header img {
@@ -117,11 +136,14 @@
 
 .footer {
   display: flex;
-  background-image: url(bglotus.png);
-  background-size: cover;
-  padding: 18px;
-  color: #CACC90;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  align-items: center;
-  
+  background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+  background-size:contain;
+  height: 25%;
+  width: 100%;
+  padding: 30px;
+  color: #32116e;
+  font-size: 90%;
+  font-family: 'sour gummy';
+  text-align: center;
+  justify-content: center;
 }
